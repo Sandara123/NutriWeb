@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GROUP 4 WEBSITE - BEGINNER EXERCISES</title>
+    <!---custom css link---->
+    <link rel="stylesheet" type="text/css" href="css/style%202.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!----header design--->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/4%20(80%20%C3%97%2080%20px)%20(2).png" class="memu-icon">
+        </a>
+
+        <ul class="navlist">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="beginner.html">Beginner</a></li>
+            <li><a href="intermediate.html">Intermidiate</a></li>
+            <li><a href="advanced.html">Advanced</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon">
+
+        </div>
+    </header>
+
+    <section id="concern">
+        <div class="text">
+            <h4>Contact Us</h4>
+        </div>
+
+        <form method="post" action="https://script.google.com/macros/s/AKfycbziSY5Y0S8zfbVYuLJfKINSl_iPjo-arPnlBkdwZTV3lrD_7indueaMl-6qS2IH5UFD/exec" name="contactform" id="contactform">
+            <textarea type="text" class="form-control" placeholder="name" name="name" id="name"></textarea>
+            <br>
+            <input type="email" class="form-control" placeholder="Email" name="email" id="email"/>
+            <br>
+            <input type="number" class="form-control" placeholder="Phone" name="number" id="phone"/>
+            <br>
+            <textarea type="comment" class="form-control" placeholder="Message" name="message" id="message"></textarea>
+            <br>
+            <input type="submit" value="Send message" class="button btn-primary"  id="submit"/>
+            
+        </form>
+
+    </section>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/aPd9exmH17o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aPd9exmH17o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/EW4KWeX8dAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe width="996" height="560" src="https://www.youtube.com/embed/PXMdfnNxMpY" title="Bruno Mars - When I Was Your Man (Mix Lyric Video) | John Legend, Sam Smith,..." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbziSY5Y0S8zfbVYuLJfKINSl_iPjo-arPnlBkdwZTV3lrD_7indueaMl-6qS2IH5UFD/exec'
+        const form = document.forms['formName']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you! your form is submitted successfully." ))
+            .then(() => {  window.location.reload(); })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    </body>
+    </html>

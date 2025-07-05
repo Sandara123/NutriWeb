@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Yatra+One');
+
+*{
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.us{
+  background: #fff;
+  position: relative;
+  background-image: url(bg\ 5.jpg);
+	background-size: cover;
+	background-position: left;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  backdrop-filter: blur(5px);
+
+}
+
+.bg img{
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  backdrop-filter: blur(5px);
+
+}
+
+.wrapper {
+  margin-top: 0px;
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: var(--h2-font);
+	line-height: 1;
+  color: #08090a;
+  
+}
+.wrapper h1{
+  margin-top: 0px;
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: var(--h2-font);
+	line-height: 1;
+  color: #5a6f80;
+  
+}
+
+.wrapper .team{
+  font-family: 'Yatra One', cursive;
+  font-size: 48px;
+  color: #15181b;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.our_team{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.our_team .team_member{
+  width: 280px;
+  margin: 10px;
+  background: rgb(236, 248, 241);
+  padding: 20px 10px;
+  border: dotted #06670f;
+}
+
+.our_team .team_member .member_img{
+  background: #5ab755;  
+  max-width: 190px;
+  width: 100%;
+  height: 190px;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+  
+}
+
+.our_team .team_member .member_img img{
+  width: 100%;
+  height: 100%;
+}
+
+.our_team .team_member h3{
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  margin: 15px 0 0px;
+  margin-top: 15px;
+}
+
+.our_team .team_member span{
+  font-size: 10px;
+  margin-top: 0px;
+  text-transform: none;
+  font-weight: normal;
+  
+}
+
+.our_team .team_member p{
+  margin-top: 13px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.our_team .team_member .member_img .social_media{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: rgba(0,0,0,0.65);
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+   transition: all 0.5s ease;
+}
+
+.our_team .team_member .member_img .social_media .item{
+  margin: 0 10px;
+}
+
+.our_team .team_member .member_img .social_media .fab {
+  color: #5ab755;
+  font-size: 20px;
+}
+
+.our_team .team_member .member_img .social_media .fas {
+  color: #5ab755;
+  font-size: 20px;
+}
+
+
+.our_team .team_member .member_img:hover .social_media{
+  transform: scale(1);
+}
